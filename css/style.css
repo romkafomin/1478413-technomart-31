@@ -1,0 +1,446 @@
+/* шрифты */
+
+@font-face {
+    font-family: "cuprum";
+    src: url(../fonts/cuprum.woff2) format("woff2"), 
+    url(../fonts/cuprum.woff) format(woff);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "cuprum";
+    src: url(../fonts/cuprumbold.woff2) format("woff2"), 
+    url(../fonts/cuprumbold.woff) format(woff);
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "PT Sans";
+    src: url(../fonts/ptsans.woff2) format("woff2")
+    url(../fonts/ptsans.woff) format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "PT Sans";
+    src: url(../fonts/ptsansbold.woff2) format("woff2")
+    url(../fonts/ptsansbold.woff) format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* цвета */
+
+:root {
+    --basic_black: #000000;
+    --basic_white: #ffffff;
+    --basic_dark_blue: #32425C;
+    --basic_red: #ee3643;
+    --extra_blue_first: #f1f5f7;
+    --extra_blue_second: #f2f6f8;
+    --extra_dark_blue: #293449;
+    --extra_yellow: #ffd180;
+    --extra_beige: #f9f5f0;
+    --extra_grey: #a9a9a9;
+    --catalog_color: #f7f3ec;
+    --order_link: #63a63e;
+    --footer_font: #f3f7f9;
+
+    --special_yellow: #ffbf47;
+    --special_blue: #3bbce3;
+    --special_purple: #dc91d8;
+    --special_green: #8ed78f;
+
+    --active_logo: #ba2732;
+    --hover_order: #5fbb2d;
+    --active_user_nav: rgba(255, 255, 255, 0.5);
+    --background_user_nav: #161d29;
+    --login_active: #c5c5c5;
+    --main_nav_active: #1d2739;
+    --button_hover: #ca2c37;
+
+
+}
+
+.page_body {
+    min-width: 940px;
+    margin: 0;
+    padding: 0;
+    font-family: "cuprum", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: var(--basic_black);
+    background-color: var(--basic_white);
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* кнопка */
+
+.button {
+    font: inherit;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--basic_white);
+    vertical-align: middle;
+    background-color: var(--basic_red);
+    text-decoration: none;
+    border: none;
+}
+
+.button:hover {
+    background-color: var(--button_hover);
+}
+
+.button:active {
+    background-color: var(--active_logo);
+}
+/* хедер */
+
+.logo {
+    background-color: var(--basic_red);
+}
+
+.logo:active {
+    background-color: var(--active_logo);
+}
+
+.main_header {
+    background-color: var(--extra_blue_first);
+}
+
+.header_wrap {
+    background-color: var(--extra_dark_blue);
+}
+
+.main_headline {
+    font-size: 16px;
+    line-height: 23px;
+    color: var(--basic_red);
+}
+
+.user_nav a {
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--basic_white);
+    list-style: none;
+}
+
+.user_nav {
+    list-style: none;
+}
+
+.user_nav a:active {
+    color: var(--active_user_nav);
+}
+
+.first_user_nav:active {
+   background-color: var(--background_user_nav); 
+}
+
+.last_user_nav {
+    background-color: var(--order_link);
+}
+
+.last_user_nav:hover {
+    background-color: var(--hover_order);
+}
+
+.header_tel {
+    font-size: 21px;
+    line-height: 30px;
+    font-weight: 700;
+    color: var(--basic_red);
+}
+
+.header_address {
+    font-style: normal;
+    color: var(--basic_dark_blue);
+}
+
+.login_nav {
+    font-size: 21px;
+    line-height: 21px;
+    list-style: none;
+}
+
+.login_nav button {
+    background-color: var(--basic_white);
+}
+
+.login_nav button:hover {
+    color: var(--basic_red);
+}
+
+.login_nav button:active {
+    color: var(--login_active);
+}
+
+
+.main_nav a {
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--basic_white);
+}
+
+.main_nav {
+    background-color: var(--basic_dark_blue);
+    list-style: none;
+}
+
+.main_nav li:hover {
+    background-color: var(--extra_dark_blue);
+}
+
+.main_nav li:active {
+    background-color: var(--main_nav_active) ;
+    
+}
+
+
+/* первая главная секция*/
+
+.offers_list {
+    list-style: none;
+    color: var(--basic_white);
+}
+
+.offers_list h3 {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.offers_list a {
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--basic_white);
+}
+
+.offers_materials {
+    background-color: var(--special_yellow);
+}
+
+.offers_instrument {
+    background-color: var(--special_blue) ;
+}
+
+.offers_technics {
+    background-color: var(--special_purple);
+}
+
+.offers_discount {
+    background-color: var(--special_green);
+}
+
+.offers_delivery {
+    background-color: var(--special_yellow);
+}
+
+.offers_perf {
+    background-image: url("img/perf.jpg");
+    background-repeat: no-repeat;
+}
+
+.offers_drill {
+    background-image: url("img/drill.jpg");
+}
+
+.offers_slider_headline {
+    text-transform: uppercase;
+    font-size: 36px;
+    line-height: 36px;
+}
+
+/* популярные товары */
+
+.products_wrapper {
+    background-color: var(--extra_beige);
+}
+
+.products_wrapper h2 {
+    font-size: 30px;
+    line-height: 30px;
+    color: var(--basic_dark_blue);
+    text-transform: uppercase;
+}
+
+
+
+.products_list {
+    list-style: none;
+}
+
+.products_list p {
+    font-size: 18px;
+    line-height: 20px;
+    color: var(--basic_black);
+}
+
+.products_list del {
+    font-size: 17px;
+    line-height: 18px;
+    color: var(--extra_grey);
+}
+
+.products_list button {
+    font-size: 17px;
+    line-height: 18px;
+}
+
+/* производители */
+.manufacturer_wrapper {
+    background-color: var(--extra_beige);
+}
+
+.manufacturer_wrapper h2 {
+    font-size: 30px;
+    line-height: 30px;
+    color: var(--basic_dark_blue);
+    text-transform: uppercase;
+}
+
+.manufacturer_list {
+    list-style: none;
+}
+
+/* сервисы */
+
+.services {
+    background-color: var(--extra_blue_first);
+}
+
+.services h2 {
+    font-size: 30px;
+    line-height: 30px;
+}
+
+.services_list {
+    list-style: none;
+}
+
+.services_list a {
+    font-size: 21px;
+    line-height: 30px;
+    font-weight: 700;
+    color: var(--basic_dark_blue);
+}
+
+.services_list h3 {
+    font-size: 30px;
+    line-height: 30px;
+    color: var(--basic_dark_blue);
+}
+
+.services_list p {
+    font-family: "PT sans";
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+}
+
+/* о компании */
+
+.about_company h2 {
+    font-style: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.about_company p {
+    font-family: "PT sans";
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+}
+
+.about_company_delivery {
+    list-style: none;
+}
+
+/* контакты */
+
+.contacts h2 {
+    font-style: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.contacts p {
+    font-family: "PT sans";
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+}
+
+/* футер */
+
+.main_footer {
+    background-color: var(--basic_dark_blue);
+}
+
+.footer_address {
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--footer_font);
+}
+
+.footer_nav_first_list {
+    list-style: none;
+}
+
+.footer_nav_first_list a {
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--footer_font);
+}
+
+.footer_nav_second_list {
+    list-style: none;
+}
+
+.footer_nav_second_list a {
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--extra_yellow);
+}
+
+.footer_social {
+    background-color: var(--extra_dark_blue);
+}
+
+.footer_social_company {
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--basic_white);
+}
+
+.footer_social_list {
+    list-style: none;
+}
+
+.footer_social_list a {
+    color: var(--basic_white);
+}
+
+.footer_p {
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--basic_white);
+}
+
+.footer_email a, .footer_site a {
+    color: var(--extra_yellow);
+}
