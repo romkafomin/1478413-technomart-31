@@ -61,6 +61,7 @@
     --login_active: #c5c5c5;
     --main_nav_active: #1d2739;
     --button_hover: #ca2c37;
+    --border_pagination: #e5e5e5;
 
 
 }
@@ -198,6 +199,9 @@ img {
 
 .main_nav {
     background-color: var(--basic_dark_blue);
+}
+
+.main_nav_list {
     list-style: none;
 }
 
@@ -300,9 +304,11 @@ img {
     color: var(--extra_grey);
 }
 
-.products_new_price {
+.product_new_price {
     font-size: 17px;
     line-height: 18px;
+    background-color: var(--basic_red);
+    border: none;
 }
 
 /* производители */
@@ -509,6 +515,31 @@ img {
 }
 
 /* каталог */
+
+.catalog_list {
+    list-style: none;
+}
+
+.pagination_list {
+    list-style: none;
+}
+
+.pagination_link {
+    font-family: "PT sans";
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    color: var(--basic_black);
+}
+
+.pagination_item {
+    width: 38px;
+    height: 38px;
+    text-align: center;
+    border: 1px solid var(--border_pagination);
+    border-radius: 2px;
+
+}
 
 
 
