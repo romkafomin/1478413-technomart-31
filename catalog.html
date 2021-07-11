@@ -56,9 +56,6 @@
     <main class="container page_catalog">
         <ul class="breadcrumbs">
             <li class="breadcrumbs_item">
-                <a class="breadcrumbs_link" href="index.html">главная</a>
-            </li>
-            <li class="breadcrumbs_item">
                 <a class="breadcrumbs_link" href="catalog.html">каталог</a>
             </li>
             <li class="breadcrumbs_item">
@@ -80,24 +77,24 @@
               <legend class="filters_legend">производители:</legend>
               <ul class="filter_first_list">
                 <li class="filter_item">
-                  <input type="checkbox" name="bosch" id="filter_bosch" checked>
-                  <label for="filter_bosch">bosch</label>
+                  <input class="filter_input_checkbox visually_hidden" type="checkbox" name="bosch" id="filter_bosch" checked>
+                  <label class="filter_label" for="filter_bosch">bosch</label>
                 </li>
                 <li class="filter_item">
-                  <input type="checkbox" name="interskol" id="filter-interskol">
-                  <label for="filter-interskol">интерскол</label>
+                  <input class="filter_input_checkbox visually_hidden" type="checkbox" name="interskol" id="filter-interskol">
+                  <label class="filter_label" for="filter-interskol">интерскол</label>
                 </li>
                 <li class="filter_item">
-                  <input type="checkbox" name="makita" id="filter_makita" checked>
-                  <label for="filter_makita">makita</label>
+                  <input class="filter_input_checkbox visually_hidden" type="checkbox" name="makita" id="filter_makita" checked>
+                  <label class="filter_label" for="filter_makita">makita</label>
                 </li>
                 <li class="filter_item">
-                  <input type="checkbox" name="dewalt" id="filter-dewalt">
-                  <label for="filter-dewalt">dewalt</label>
+                  <input class="filter_input_checkbox visually_hidden" type="checkbox" name="dewalt" id="filter-dewalt">
+                  <label class="filter_label" for="filter-dewalt">dewalt</label>
                 </li>
                 <li class="filter_item">
-                  <input type="checkbox" name="hitachi" id="filter-hitachi">
-                  <label for="filter-hitachi">hitachi</label>
+                  <input class="filter_input_checkbox visually_hidden" type="checkbox" name="hitachi" id="filter-hitachi">
+                  <label class="filter_label" for="filter-hitachi">hitachi</label>
                 </li>
               </ul>
             </fieldset>
@@ -105,12 +102,12 @@
               <legend class="filters_legend">питание:</legend>
               <ul class="filter_second_list">
                 <li class="filter_item">
-                  <input type="radio" name="power" value="battery" id="filter_battery" checked>
-                  <label for="filter_battery">аккумуляторные</label>
+                  <input class="filter_input_radio visually_hidden" type="radio" name="power" value="battery" id="filter_battery" checked>
+                  <label class="filter_label_radio" for="filter_battery">аккумуляторные</label>
                 </li>
                 <li class="filter_item">
-                  <input type="radio" name="power" value="net" id="filter_net">
-                  <label for="filter_net">сетевые</label>
+                  <input class="filter_input_radio visually_hidden" type="radio" name="power" value="net" id="filter_net">
+                  <label class="filter_label_radio" for="filter_net">сетевые</label>
                 </li>
               </ul>
             </fieldset>

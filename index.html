@@ -13,10 +13,12 @@
         <div class="header_wrap container">
           <div class="header_flex">
             <div class="logo header_logo">
-              <a><img class="" src="img/logo-technomart.svg" width="108" height="18" alt=""></a>
+              <a class="header_logo_link"><img src="img/logo-technomart.svg" width="108" height="18" alt=""></a>
             </div>
-            <form action="#" method="GET">
-              <input class="header_search" type="search" placeholder="Поиск:">
+            <form  action="#" method="GET">
+              <label class="header_search_label">                 
+                <input class="header_search" type="search" placeholder="Поиск:">
+              </label>
             </form>
           </div>
           <ul class="user_nav">
@@ -53,8 +55,7 @@
         </div>
       </div>
     </header>
-
-    <main class="">
+    <main>
       <section class="offers container">
         <h2 class="visually_hidden">Наши предложения</h2>
         <ul class="offers_list">
@@ -75,11 +76,11 @@
             <p class="offers_slider_p">Настоящие мужские игрушки</p>
             <a href="catalog.html" class="button offers_slider_button">открыть каталог</a>
           </li>
-          <!--<li class="offers_drill">
+          <li class="offers_drill">
             <h3 class="offers_slider_headline">дрели</h3>
             <p class="offers_slider_p">Соседям на радость!</p>
             <a href="catalog.html" class="button">открыть каталог</a>
-          </li>-->
+          </li>
           <li class="offers_discount">
             <h3 class="offers_headline offers_discount_headline">Скидка 50%</h3>
             <a class="offers_link offers_discount_link" href="#">на 350 товаров</a>
@@ -107,9 +108,11 @@
             </div>
           </li>
           <li class="products_list_item">
+            <div class="product_img">
             <a class="product_list_link" href="#">
               <img src="img/tool2.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
             </a>
+            </div>
             <div class="product_item_bottom">
               <p class="product_name">Перфоратор BOSCH<br>BFG 3000</p>
               <del class="product_old_price">22500 Р.</del>
@@ -117,9 +120,11 @@
             </div>
           </li>
           <li class="products_list_item">
+            <div class="product_img">
             <a class="product_list_link" href="#">
               <img src="img/tool3.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
             </a>
+            </div>
             <div class="product_item_bottom">
               <p class="product_name">Перфоратор BOSCH<br>BFG 6000</p>
               <del class="product_old_price">30500 Р.</del>
@@ -127,9 +132,11 @@
             </div>
           </li>
           <li class="products_list_item">
+            <div class="product_img">
             <a class="product_list_link" href="#">
               <img src="img/tool2.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
             </a>
+            </div>
             <div class="product_item_bottom">
               <p class="product_name">Перфоратор BOSCH<br>BFG 2000</p>
               <del class="product_old_price">22500 Р.</del>
@@ -192,29 +199,35 @@
           <p class="services_p">Хороший интернет-магазин отличается от плохого не только ценами!<br>
             Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
           <ul class="services_list">
-            <li class="services_list_item">
-              <a class="services_link" href="#"> Доставка</a>
+            <li class="services_list_item first_services_list_item">
+              <a class="services_link first_services_link" href="#"> Доставка</a>
+              <div class="first_service">
               <h3 class="services_headline">доставка</h3>
               <p class="services_p">Мы с удовольствием доставим ваш товар прямо<br>
                 к вашему подъезду совершенно бесплатно!<br>
                 Ведь мы неплохо заработаем,<br>
                 поднимая его на ваш этаж!</p>
+              </div>
             </li>
             <li class="services_list_item">
               <a class="services_link" href="#">Гарантия</a>
+              <div class="test">
               <h3 class="services_headline">Гарантия</h3>
               <p class="services_p">Если купленный у нас товар поломается или заискрит,<br>
                 а также в случае пожара, спровоцированного его<br>
                 возгоранием,  вы всегда можете быть уверены в нашей<br>
                 гарантии. Мы обменяем сгоревший товар на новый.<br>
                 Дом уж восстановите как-нибудь сами.</p>
+                </div>
             </li>
             <li class="services_list_item">
               <a class="services_link" href="#">Кредит</a>
+              <div class="test">
               <h3 class="services_headline">кредит</h3>
               <p class="services_p">КредитЗалезть в долговую яму стало проще!<br>
                 Кредитные консультанты придут вам на помощь.</p>
               <button type="submit" class="button">отправить заявку</button>
+              </div>
             </li>
           </ul>
         </section>
@@ -249,7 +262,9 @@
       <div class="container">
         <div class="footer_flex">
           <div>
-            <a><img class="logo footer_logo" src="img/logo-technomart.svg" width="228" height="68" alt="Логотип техномарт"></a>
+            <div class="logo footer_logo">
+              <a class="footer_logo_link"><img  src="img/logo-technomart.svg" width="138" height="23" alt="Логотип техномарт"></a>
+            </div>
             <p class="footer_address">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П<br>+7 800 555-86-28</p>
           </div>
           <nav class="footer_nav">
