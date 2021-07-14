@@ -1312,16 +1312,35 @@ img {
     width: 220px;
     height: 38px;
     padding: 0;
+    padding-left: 12px;
     margin-top: 11px;
     border: 2px solid var(--login_active);
 }
+
+.write_us_input::placeholder {
+    font-family: "PT sans";
+    font-size: 13px;
+    line-height: 24px;
+    color: var(--extra_grey);
+}
+
+
 
 .write_us_textarea {
     width: 460px;
     height: 114px;
     padding: 0;
     margin-top: 11px;
+    padding-left: 12px;
+    padding-top: 6px;
     border: 2px solid var(--login_active);
+}
+
+.write_us_textarea::placeholder {
+    font-family: "PT sans";
+    font-size: 13px;
+    line-height: 24px;
+    color: var(--extra_grey);
 }
 
 
@@ -1464,13 +1483,14 @@ img {
 }
 
 .breadcrumbs {
+    height: 10px;
     position: relative;
     grid-column: 1/-1;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: flex-start;
     margin: 0;
     margin-left: 55px;
-    margin-top: 21px;
+    margin-top: 25px;
     padding: 0;
     list-style: none;
 }
