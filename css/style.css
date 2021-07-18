@@ -1863,6 +1863,14 @@ img {
     
 }
 
+.sort_headline {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    text-transform: uppercase;
+    margin-right: 140px;
+}
+
 .first_sort {
     color: var(--basic_red);
     opacity: 1;
@@ -2209,7 +2217,7 @@ img {
 
 .about_product_wrapper {
     padding-top: 64px;
-    padding-bottom: 68px;
+    padding-bottom: 73px;
     background-color: var(--extra_blue_first);
 }
 
@@ -2218,8 +2226,11 @@ img {
 }
 
 .about_produt_headline {
+    margin: 0;
+    padding: 0;
     font-size: 30px;
     line-height: 30px;
+    font-weight: 400;
     text-transform: uppercase;
 }
 
@@ -2228,6 +2239,8 @@ img {
     font-weight: 400;
     font-size: 13px;
     line-height: 24px;
+    margin: 0;
+    margin-top: 25px;
 }
 
 .pagination_current_link{
