@@ -723,7 +723,7 @@ img {
 
 .offers_perf {
     position: relative;
-    display: block;
+    display: none;
     padding-bottom: 27px;
     grid-column: 1/3;
     grid-row: 2/4;
@@ -755,7 +755,7 @@ img {
     background-position: 0 0;
 }
 
-.offers_perf::after {
+/*.offers_perf::after {
     content: "";
     width: 10px;
     height: 10px;
@@ -792,33 +792,11 @@ img {
 
 .offers_drill {
     position: relative;
-    display: none;
+    display: block;
     grid-column: 1/3;
     grid-row: 2/4;
     background-image: url("../img/drill.jpg");
     background-repeat: no-repeat;
-}
-
-.offers_drill::after {
-    content: "";
-    width: 10px;
-    height: 10px;
-    top: 220px;
-    left: 295px;
-    border-radius: 50%;
-    position: absolute;
-    background-color: var(--basic_white);
-}
-
-.offers_drill::before {
-    content: "";
-    width: 10px;
-    height: 10px;
-    top: 220px;
-    left: 315px;
-    border-radius: 50%;
-    position: absolute;
-    background-color: var(--basic_white);
 }
 
 .offers_drill::before {
@@ -861,11 +839,46 @@ img {
 }
 
 .offers_slider_button {
+    position: relative;
     margin-top: 90px;
     margin-left: 24px;
     margin-bottom: 27px;
     padding: 11px 46px 9px 46px;
 }
+
+.offers_slider_button::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    top: 20px;
+    left: 290px;
+    border-radius: 5px;
+    position: absolute;
+    background-color: var(--basic_white);
+}
+
+.offers_slider_button::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    top: 20px;
+    left: 270px;
+    border-radius: 5px;
+    position: absolute;
+    background-color: var(--basic_white);
+}
+
+/*.offers_slider_button::after {
+    content: "";
+    width: 6px;
+    height: 6px;
+    top: 20px;
+    left: 290px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: var(--basic_red);
+}*/
+
 
 /* популярные товары */
 
@@ -1028,8 +1041,10 @@ img {
     margin: 0;
     margin-bottom: 7px;
     text-align: center;
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 18px;
     line-height: 20px;
+    font-weight: 700;
     color: var(--basic_black);
 }
 
@@ -1996,6 +2011,7 @@ img {
 
 .filter {
     border-top: 1px solid var(--catalog_filter);
+    margin-bottom: 10px;
 }
 
 .filter2 {
@@ -2108,6 +2124,10 @@ img {
     text-transform: uppercase;
 }
 
+.filters_feed_legend {
+    margin-bottom: 25px;
+}
+
 .filter_item {
     padding-left: 35px;
     padding-bottom: 20px;
@@ -2135,12 +2155,15 @@ img {
 }
 
 .filter_button {
-    width: 100%;
+    width: 220px;
     background-color: var(--basic_white);
     border: 1px solid var(--border_pagination);
     text-transform: uppercase;
     padding: 10px 0;
-    margin-top: 37px;
+    margin-top: 20px;
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 24px;
 }
 
 
@@ -2160,6 +2183,7 @@ img {
     grid-gap: 20px;
     margin: 0;
     padding: 0;
+    margin-top: 10px;
     margin-bottom: 48px;
     list-style: none;
 }
